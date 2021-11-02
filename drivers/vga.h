@@ -22,7 +22,6 @@ enum vga_color {
 };
 
 void wait_for_io(uint32_t timer_count);
-size_t strlen(const char* str);
 void terminal_delete(size_t x, size_t y);
 void terminal_initialize(void);
 void terminal_setcolor(uint8_t color);
