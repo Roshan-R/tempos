@@ -9,6 +9,6 @@ A hobby 32 bit OS
 ## Usage 
 clone the repository and run 
 ```bash
-qemu-system-x86_64 -drive format=raw,file="kernel.bin",index=0,if=floppy, -m 128M
+qemu-system-i386 -drive format=raw,file=tempos.iso
 ```
 to boot into the OS.

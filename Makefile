@@ -3,17 +3,14 @@
 #
 
 GCCPARAMS = -m32 -nostdlib -ffreestanding -std=c++11 -mno-red-zone -fno-exceptions -nostdlib -fno-rtti -Wall -Wextra -Werror
+#GCCPARAMS = -m32 -nostdlib -ffreestanding -std=c++11 -mno-red-zone -fno-exceptions -nostdlib -fno-rtti
 CC="/usr/local/i386elfgcc/i386-elf-11.2.0-Linux-x86_64/bin/i386-elf-gcc-11.2.0"
 
-all: run
+all: iso
 	@echo "Finished building kernel"
 
-	#nasm "Bootloader/boot.asm" -f bin -o "WeeBins/boot.bin" -i Bootloader
-
-
-kernel.bin : bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o
-	$(CC) bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o -o kernel.bin $(GCCPARAMS) -T linker.ld
-	# $(CC) kernel/kmain.cpp drivers/vga.cpp libs/string.cpp drivers/port_io.cpp bootloader/boot.o -o kernel.bin $(GCCPARAMS) -T linker.ld
+kernel.bin : bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o bin/cpu/idt.o
+	$(CC) bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o bin/cpu/idt.o -o kernel.bin $(GCCPARAMS) -T linker.ld
 
 bin/kernel/kmain.o : kernel/kmain.cpp
 	$(CC) -c kernel/kmain.cpp -o bin/kernel/kmain.o $(GCCPARAMS)
@@ -25,7 +22,14 @@ bin/libs/string.o : libs/string.cpp
 	$(CC) -c libs/string.cpp -o bin/libs/string.o $(GCCPARAMS)
 
 bin/bootloader/boot.o : bootloader/boot.asm
-	nasm -f elf32 bootloader/boot.asm -o bin/bootloader/boot.o
+	i386-elf-as bootloader/boot.asm -o bin/bootloader/boot.o
+	# nasm -f elf32 bootloader/boot.asm -o bin/bootloader/boot.o
 
-run : kernel.bin
-	qemu-system-x86_64 -drive format=raw,file="kernel.bin",index=0,if=floppy, -m 128M
+bin/cpu/idt.o : cpu/idt.cpp
+	$(CC) -c cpu/idt.cpp -o bin/cpu/idt.o $(GCCPARAMS)
+
+iso : kernel.bin 
+	rm iso/boot/kernel.bin
+	cp kernel.bin iso/boot
+	grub-mkrescue /usr/lib/grub/i386-pc -o tempos.iso iso/
+	qemu-system-i386 -drive format=raw,file=tempos.iso

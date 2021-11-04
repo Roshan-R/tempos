@@ -1,0 +1,18 @@
+. BIOS looks for the Boot Sector.
+. A Boot Sector is the first sector of a bootable dirve
+  512 bytes for an HDD, USB etc.
+  that is, 512x8 = 4096 bits long
+. Boot sector ends with hex 0x55 0xaa
+
+This methord is only for BIOS and does not work in UEFI systems
+
+
+
+
+# References
+
+. 64-bit OS playlist - poncho - https://www.youtube.com/watch?v=mpPbKEeWIHU&list=PLxN4E629pPnJxCQCLy7E0SQY_zuumOVyZ
+
+. nanobyte https://www.youtube.com/watch?v=9t-SPC7Tczc
+
+. good idea of grub https://www.youtube.com/watch?v=FkrpUaGThTQ&list=PLZIpz5Sq6Hgi79xIwKmz5wgH7n7ZD3OIe&index=3
