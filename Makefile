@@ -25,7 +25,7 @@ bin/libs/string.o : libs/string.cpp
 	$(CC) -c libs/string.cpp -o bin/libs/string.o $(GCCPARAMS)
 
 bin/bootloader/boot.o : bootloader/boot.asm
-	nasm -f elf32 bootloader/boot.asm -o bin/bootloader/boot.o
+	nasm -ibootloader/ -f elf32 bootloader/boot.asm -o bin/bootloader/boot.o
 
 run : kernel.bin
 	qemu-system-x86_64 -drive format=raw,file="kernel.bin",index=0,if=floppy, -m 128M
