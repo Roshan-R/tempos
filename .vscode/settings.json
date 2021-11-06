@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/yt/dev/os/tempos",
+            "binaryPath": "/home/yt/dev/os/tempos/kernel.bin",
+            "binaryArgs": []
+        }
+    ]
+}

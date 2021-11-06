@@ -1,0 +1,401 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Nov  6 12:01:42 2021
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/yt/.gtkrc:/home/yt/.config/gtkrc
+# environment
+NIX_REMOTE = daemon
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-fd8b458f-6c48-4434-813a-af063762a8c6.sock
+ 
+# environment
+VSCODE_CWD = /home/yt
+# environment
+UBUNTU_MENUPROXY = 1
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/yt/dev/os/tempos
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/yt
+# environment
+XDG_DATA_DIRS = /home/yt/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+OLDPWD = /home/yt
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/yt/.config/Code - OSS/CachedData/ee8c7def80afc00dd6e593ef12f37756d8f504ea
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/yt/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/yt/dev/os/tempos
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1001/kwallet5.socket
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /home/yt/.config/kdedefaults:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XCURSOR_THEME = breeze_cursors
+# environment
+XDG_SESSION_DESKTOP = KDE
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"Code - OSS","submitURL":"","uploadToServer":false}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 3524
+# environment
+MOZ_ENABLE_WAYLAND = 1
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/parippvada:@/tmp/.ICE-unix/2252,unix/parippvada:/tmp/.ICE-unix/2252
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-oss.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/yt/.config/Code - OSS/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 5)
+GCCPARAMS = -m32 -nostdlib -ffreestanding -std=c++11 -mno-red-zone -fno-exceptions -nostdlib -fno-rtti -Wall -Wextra -Werror
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/yt/.nix-profile/bin:/home/yt/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/yt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/yt/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+_JAVA_AWT_WM_NONREPARENTING = 1
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+MUTTER_ALLOW_HYBRID_GPUS = 1
+# automatic
+?F = $(notdir $?)
+# environment
+KDE_APPLICATIONS_AS_SCOPE = 1
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = plasma
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = yt
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 2117
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module:appmenu-gtk-module
+# environment
+USER = yt
+# default
+MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1001
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /home/yt/.nix-profile
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1001
+# environment
+D_DISABLE_RT_SCREEN_SCALE = 1
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/yt/.gtkrc-2.0:/home/yt/.config/gtkrc-2.0
+# environment
+HOME = /home/yt
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1001/vscode-77511568-1.61.0-main.sock
+# environment
+XDG_SESSION_ID = 2
+# environment
+XCURSOR_SIZE = 24
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+NIX_PATH = nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixpkgs:/nix/var/nix/profiles/per-user/root/channels:/home/yt/.nix-defexpr/channels
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+KDE_SESSION_VERSION = 5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 6)
+CC = "/usr/local/i386elfgcc/i386-elf-11.2.0-Linux-x86_64/bin/i386-elf-gcc-11.2.0"
+# environment
+KDE_FULL_SESSION = true
+# variable set hash-table stats:
+# Load=110/1024=11%, Rehash=0, Collisions=6/143=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2052, inode 2335654): 15 files, no impossibilities.
+
+# 15 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+bin/drivers/vga.o: drivers/vga.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-11-05 20:41:39.997516444
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) -c drivers/vga.cpp -o bin/drivers/vga.o $(GCCPARAMS)
+
+# Not a target:
+bootloader/boot.asm:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-06 12:00:57.757897276
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-06 11:58:15.515968972
+#  File has been updated.
+#  Successfully updated.
+
+bin/libs/string.o: libs/string.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-11-05 20:38:14.333389259
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(CC) -c libs/string.cpp -o bin/libs/string.o $(GCCPARAMS)
+
+# Not a target:
+kernel/kmain.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-05 21:11:28.755373836
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+drivers/vga.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-05 20:41:36.874214956
+#  File has been updated.
+#  Successfully updated.
+
+bin/kernel/kmain.o: kernel/kmain.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-11-05 21:11:29.751965722
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 19):
+	$(CC) -c kernel/kmain.cpp -o bin/kernel/kmain.o $(GCCPARAMS)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: run
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 9):
+	@echo "Finished building kernel"
+	#nasm "Bootloader/boot.asm" -f bin -o "WeeBins/boot.bin" -i Bootloader
+
+run: kernel.bin
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 31):
+	qemu-system-x86_64 -drive format=raw,file="kernel.bin",index=0,if=floppy, -m 128M
+
+# Not a target:
+libs/string.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-05 20:37:54.797017861
+#  File has been updated.
+#  Successfully updated.
+
+kernel.bin: bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 15):
+	$(CC) bin/kernel/kmain.o bin/drivers/vga.o bin/libs/string.o bin/bootloader/boot.o -o kernel.bin $(GCCPARAMS) -T linker.ld
+	# $(CC) kernel/kmain.cpp drivers/vga.cpp libs/string.cpp drivers/port_io.cpp bootloader/boot.o -o kernel.bin $(GCCPARAMS) -T linker.ld
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/bootloader/boot.o: bootloader/boot.asm
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/bootloader/boot.o
+# automatic
+# * := 
+# automatic
+# < := bootloader/boot.asm
+# automatic
+# + := bootloader/boot.asm
+# automatic
+# % := 
+# automatic
+# ^ := bootloader/boot.asm
+# automatic
+# ? := bootloader/boot.asm
+# automatic
+# | := 
+ 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 28):
+	nasm -ibootloader/ -f elf32 bootloader/boot.asm -o bin/bootloader/boot.o
+
+# files hash-table stats:
+# Load=14/1024=1%, Rehash=0, Collisions=0/41=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 30 / storage = 329 B / avg = 10 B
+# current buf: size = 8162 B / used = 329 B / count = 30 / avg = 10 B
+
+# strcache performance: lookups = 49 / hit rate = 38%
+# hash-table stats:
+# Load=30/8192=0%, Rehash=0, Collisions=0/49=0%
+# Finished Make data base on Sat Nov  6 12:01:42 2021
+
+ 
