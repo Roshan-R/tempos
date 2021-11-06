@@ -3,7 +3,7 @@ A hobby 32 bit OS
 
 ## Features 
 - Protected Mode
-- Custom Bootloader
+- GRUB Bootloader
 - VGA Graphics
 
 ## Usage 
